@@ -74,6 +74,7 @@ abstract class ChatTheme {
     this.inputContainerDecoration,
     required this.inputMargin,
     required this.inputPadding,
+    this.inputTextMargin,
     required this.inputTextColor,
     this.inputPlaceholderTextColor,
     this.inputTextCursorColor,
@@ -170,6 +171,10 @@ abstract class ChatTheme {
 
   /// Inner insets of the bottom bar where text field is.
   final EdgeInsets inputPadding;
+
+  /// Margin around the text input.
+  /// Default to 24pt horizontally.
+  final EdgeInsets? inputTextMargin;
 
   /// Color of the text field's text and attachment/send buttons.
   final Color inputTextColor;
@@ -354,6 +359,7 @@ class DefaultChatTheme extends ChatTheme {
     super.inputContainerDecoration,
     super.inputMargin = EdgeInsets.zero,
     super.inputPadding = const EdgeInsets.fromLTRB(24, 20, 24, 20),
+    super.inputTextMargin,
     super.inputTextColor = neutral7,
     super.inputPlaceholderTextColor = neutral7,
     super.inputTextCursorColor,

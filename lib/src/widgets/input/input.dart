@@ -167,7 +167,9 @@ class _InputState extends State<Input> {
                   ),
                 Expanded(
                   child: Padding(
-                    padding: textPadding,
+                    padding:
+                        InheritedChatTheme.of(context).theme.inputTextMargin ??
+                            textPadding,
                     child: TextField(
                       enabled: widget.options.enabled,
                       autocorrect: widget.options.autocorrect,
