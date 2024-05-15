@@ -158,6 +158,7 @@ class _InputState extends State<Input> {
             padding: safeAreaInsets,
             child: Row(
               textDirection: TextDirection.ltr,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 if (widget.onAttachmentPressed != null)
                   AttachmentButton(
