@@ -75,6 +75,7 @@ abstract class ChatTheme {
     required this.inputMargin,
     required this.inputPadding,
     required this.inputTextColor,
+    this.inputPlaceholderTextColor,
     this.inputTextCursorColor,
     required this.inputTextDecoration,
     required this.inputTextStyle,
@@ -172,6 +173,9 @@ abstract class ChatTheme {
 
   /// Color of the text field's text and attachment/send buttons.
   final Color inputTextColor;
+
+  /// Color of the text field's placeholder text.
+  final Color? inputPlaceholderTextColor;
 
   /// Color of the text field's cursor.
   final Color? inputTextCursorColor;
@@ -351,6 +355,7 @@ class DefaultChatTheme extends ChatTheme {
     super.inputMargin = EdgeInsets.zero,
     super.inputPadding = const EdgeInsets.fromLTRB(24, 20, 24, 20),
     super.inputTextColor = neutral7,
+    super.inputPlaceholderTextColor = neutral7,
     super.inputTextCursorColor,
     super.inputTextDecoration = const InputDecoration(
       border: InputBorder.none,
@@ -525,6 +530,7 @@ class DarkChatTheme extends ChatTheme {
     super.inputMargin = EdgeInsets.zero,
     super.inputPadding = const EdgeInsets.fromLTRB(24, 20, 24, 20),
     super.inputTextColor = neutral7,
+    super.inputPlaceholderTextColor,
     super.inputTextCursorColor,
     super.inputTextDecoration = const InputDecoration(
       border: InputBorder.none,
