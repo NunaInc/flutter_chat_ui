@@ -1,16 +1,11 @@
-<br>
+# Flutter Chat UI v2 🚀
 
-<p align="center">
-  <a href="https://flyer.chat">
-    <img src="https://flyer.chat/assets/logo-dark.svg" width="288px" alt="Flyer Chat Logo" />
-  </a>
-</p>
+Welcome to the next generation of Flutter Chat UI! ✨
 
-<h1 align="center">Flutter Chat UI</h1>
+> 🔨 **Version 2 is currently under development**  
+> Available as a dev release on pub.dev
 
-<p align="center">
-  Actively maintained, community-driven chat UI implementation with an optional <a href="https://pub.dev/packages/flutter_firebase_chat_core">Firebase BaaS</a>.
-</p>
+📝 Documentation is actively being written and will be continuously updated here and on Github.
 
 <br>
 
