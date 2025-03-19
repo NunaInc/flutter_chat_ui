@@ -155,6 +155,7 @@ class _InputState extends State<Input> {
             padding: safeAreaInsets,
             child: Row(
               textDirection: TextDirection.ltr,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 if (widget.onAttachmentPressed != null)
                   AttachmentButton(
@@ -164,7 +165,9 @@ class _InputState extends State<Input> {
                   ),
                 Expanded(
                   child: Padding(
-                    padding: textPadding,
+                    padding:
+                        InheritedChatTheme.of(context).theme.inputTextMargin ??
+                            textPadding,
                     child: TextField(
                       enabled: widget.options.enabled,
                       autocorrect: widget.options.autocorrect,
@@ -183,9 +186,12 @@ class _InputState extends State<Input> {
                                 .inputTextStyle
                                 .copyWith(
                                   color: InheritedChatTheme.of(context)
-                                      .theme
-                                      .inputTextColor
-                                      .withOpacity(0.5),
+                                          .theme
+                                          .inputPlaceholderTextColor ??
+                                      InheritedChatTheme.of(context)
+                                          .theme
+                                          .inputTextColor
+                                          .withOpacity(0.5),
                                 ),
                             hintText:
                                 InheritedL10n.of(context).l10n.inputPlaceholder,
